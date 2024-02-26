@@ -299,14 +299,14 @@ func PossibleDynamicThresholdSensitivityValues() []DynamicThresholdSensitivity {
 }
 
 // EventLevel - the event level
-type EventLevel string
+type EventLevel int32
 
 const (
-	EventLevelCritical      EventLevel = "Critical"
-	EventLevelError         EventLevel = "Error"
-	EventLevelInformational EventLevel = "Informational"
-	EventLevelVerbose       EventLevel = "Verbose"
-	EventLevelWarning       EventLevel = "Warning"
+	EventLevelCritical      EventLevel = 1
+	EventLevelError         EventLevel = 2
+	EventLevelWarning       EventLevel = 3
+	EventLevelInformational EventLevel = 4
+	EventLevelVerbose       EventLevel = 5
 )
 
 // PossibleEventLevelValues returns the possible values for the EventLevel const type.
